@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/nuxt-community/google-fonts/compare/v1.3.0...v1.4.0) (2021-04-19)
+
+
+### Features
+
+* add material icons ([59a52f7](https://github.com/nuxt-community/google-fonts/commit/59a52f7941f88eb3ac580f09c53f0a4e93fd6ca9))
+* typescript rewrite ([#54](https://github.com/nuxt-community/google-fonts/issues/54)) ([81259ca](https://github.com/nuxt-community/google-fonts/commit/81259ca0ba2cde941a66979fbb80372d9b20cd76))
+
+
+### Bug Fixes
+
+* docs typo and formatting ([#52](https://github.com/nuxt-community/google-fonts/issues/52)) ([2a7149d](https://github.com/nuxt-community/google-fonts/commit/2a7149d2f7c1bb0bec8045da19a0874678e61a69))
+
 ## [1.3.0](https://github.com/nuxt-community/google-fonts/compare/v1.2.0...v1.3.0) (2021-02-15)
 
 
