@@ -14,6 +14,7 @@ export interface ModuleOptions extends Partial<DownloadOptions & GoogleFonts> {
   useStylesheet?: boolean;
   download?: boolean;
   inject?: boolean;
+  icons?: boolean;
 }
 
 const CONFIG_KEY = 'googleFonts'
@@ -35,7 +36,8 @@ const nuxtModule: Module<ModuleOptions> = function (moduleOptions) {
     outputDir: this.options.dir.assets,
     stylePath: 'css/fonts.css',
     fontsDir: 'fonts',
-    fontsPath: '~assets/fonts'
+    fontsPath: '~assets/fonts',
+    icons: false
   }
 
   this.nuxt.hook('build:before', async () => {
@@ -99,6 +101,16 @@ const nuxtModule: Module<ModuleOptions> = function (moduleOptions) {
       }
 
       return
+    }
+
+    // https://developers.google.com/fonts/docs/material_icons#setup_method_1_using_via_google_fonts
+    if (options.icons) {
+      // @ts-ignore
+      this.options.head.link.push({
+        hid: 'gf-prefetch',
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+      })
     }
 
     // https://developer.mozilla.org/en-US/docs/Web/Performance/dns-prefetch

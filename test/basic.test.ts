@@ -6,6 +6,11 @@ describe('basic', () => {
     fixture: 'fixture/basic'
   })
 
+  test('has icons link', async () => {
+    const { body } = await get('/')
+    expect(body).toContain('<link data-n-head="ssr" data-hid="gf-prefetch" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">')
+  })
+
   test('has prefetch link', async () => {
     const { body } = await get('/')
     expect(body).toContain('<link data-n-head="ssr" data-hid="gf-prefetch" rel="dns-prefetch" href="https://fonts.gstatic.com/">')

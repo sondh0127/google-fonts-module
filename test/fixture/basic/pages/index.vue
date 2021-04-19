@@ -6,5 +6,7 @@
         About
       </NuxtLink>
     </p>
+
+    With Icons:     <span class="material-icons">face</span>
   </div>
 </template>
