@@ -1,11 +1,12 @@
 {
-  "name": "@nuxtjs/google-fonts",
-  "version": "1.4.1",
+  "name": "@sondh0127/nuxtjs-google-fonts",
+  "version": "1.4.0",
   "description": "Google Fonts module for NuxtJS",
-  "repository": "nuxt-community/google-fonts",
+  "repository": "https://github.com/sondh0127/google-fonts-module",
   "license": "MIT",
   "contributors": [
-    "Ricardo Gobbo de Souza <ricardogobbosouza@yahoo.com.br>"
+    "Ricardo Gobbo de Souza <ricardogobbosouza@yahoo.com.br>",
+    "Son Hong Do <sondh0127@gmail.com>"
   ],
   "main": "./dist/module.js",
   "types": "./dist/module.d.ts",
